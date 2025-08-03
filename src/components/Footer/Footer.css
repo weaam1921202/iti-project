@@ -1,0 +1,142 @@
+.Footer{
+    background: #3d464d;
+    margin-top: 100px;
+    color: #fff;
+    padding: 30px;
+}
+
+.Footer .cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+
+}
+
+.Footer .cont .card {
+    width: calc((100% - 30px ) / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.Footer .cont .card ul{
+    list-style: none;
+}
+.Footer .cont .card:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Footer .cont .card b {
+    font-size: 20px;
+    color: #fff;
+}
+
+.Footer .cont .card p {
+    line-height: 2;
+    color: #fff;
+}
+
+.Footer .cont .card:nth-child(2) {
+
+}
+
+.Footer .cont .card:nth-child(2) b {
+
+}
+
+
+
+.Footer .cont .card ul {
+    line-height: 2.5;
+}
+
+
+.Footer .cont .card:nth-child(2) li {
+
+}
+
+.Footer .cont .card:nth-child(3) {
+
+}
+
+.Footer .cont .card:nth-child(3) b {
+
+}
+
+
+.Footer .cont .card:nth-child(3) ul {
+
+}
+
+
+.Footer .cont .card:nth-child(3) li {
+
+}
+
+
+.Footer .cont .card:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Footer .cont .card:nth-child(4) b {
+}
+
+
+.Footer .cont .card:nth-child(4) p {
+
+}
+
+
+.Footer .cont .card:nth-child(4) div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: #fff;
+    padding-left: 5px;
+
+}
+
+.Footer .cont .card:nth-child(4) div input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    
+}
+
+.Footer .cont .card:nth-child(4) div input:hover {
+    
+    border: none;
+    
+}
+
+.Footer .cont .card:nth-child(4) div input::placeholder {
+
+}
+
+.Footer .cont .card:nth-child(4) div button {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main);
+}
+
+.Footer .down{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    /* color: #fff; */
+}

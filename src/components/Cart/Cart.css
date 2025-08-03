@@ -1,0 +1,39 @@
+.dark .pro{
+    /* background-color: transparent;
+    border: 1px solid #000;  */
+
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+    color: red !important;
+
+}
+.dark p ,b , span{
+    color: var(--dark) !important;
+
+}
+.dark span{
+    color: var(--dark) !important;
+}
+.dark b{
+    color: var(--dark) !important;
+
+}
+
+.dark .Cart .total {
+    /* background-color: #fff; */
+    border: 2px solid #000;
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+
+}
+body{
+    /* background-color: var(--sec);
+    color: var(--dark); */
+}
+.Cart{
+    /* background-color: var(--light);
+    color: var(--dark); */
+}
+.Cart .pro{
+    
+}

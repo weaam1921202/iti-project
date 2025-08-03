@@ -1,0 +1,125 @@
+.Contact{
+    width: 100%;
+    padding: 20px;
+    /* background-color: #eee; */
+    background-color: var(--light);
+    color: var(--dark);
+
+
+}
+
+.Contact .cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    /* background-color: var(--light);
+    color: var(--dark); */
+}
+
+.dark .Contact  form{
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+}
+
+.dark .Contact .cont .map{
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+    /* padding: 2px; */
+}
+.dark .Contact .cont .map div{
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+}
+.Contact .cont form {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* background-color: var(--sec);
+    color: var(--dark); */
+}
+
+.Contact .cont form textarea {
+    width: 90%;
+    height: 200px ;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color:#eee ;
+
+}
+
+.Contact .cont form input{
+    width: 90%;
+    height: 40px;
+    padding: 0px 15px;
+    border: 1px solid #ccc;
+    background-color:#eee ;
+}
+
+.Contact .cont form button {
+
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--main);
+    height: 50px;
+    padding: 10px 20px;
+
+}
+.Contact .cont .map{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2px;
+    /* background-color: var(--light);
+    color: var(--dark); */
+
+}
+.Contact .cont .map .frame {
+    background-color: #fff;
+    width: 80%;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Contact .cont .map .frame iframe{
+
+}
+
+.Contact .cont .map div{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    /* background-color: var(--sec);
+    color: var(--dark); */
+
+}
+
+
+.Contact .cont .map div p{
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.Contact .cont .map p i{
+    color: var(--main);
+}

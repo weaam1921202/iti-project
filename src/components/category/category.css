@@ -1,0 +1,23 @@
+.Category{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.Category .row .card  {
+    background-color: var(--light);
+    color: var(--dark);
+}
+.Category .row .card p{
+    color: #000 !important;
+}
+.icons{
+    color: var(--main);
+}
+
+.dark .Category .row .card p{
+    color: #fff !important;
+}
+
+.dark .Category .row {
+    background: #333;
+}

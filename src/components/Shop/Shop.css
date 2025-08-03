@@ -1,0 +1,14 @@
+.Shop{
+    background-color: var(--sec);
+    /* color: var(--dark); */
+}
+img{
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+
+
+  

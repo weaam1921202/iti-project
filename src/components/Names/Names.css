@@ -1,0 +1,14 @@
+.Names{
+   
+}
+ .one {
+    gap: 2px;
+ }
+
+ .dark .one{
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+ }
+ .dark h2{
+    color: var(--dark) !important;
+ }

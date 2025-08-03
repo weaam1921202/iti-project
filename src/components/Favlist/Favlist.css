@@ -1,0 +1,25 @@
+.list{
+    /* color: var(--dark) !important; 
+    background-color: var(--sec) !important;  */
+
+
+}
+/* body{
+    background: var(--light);
+} */
+.dark .one  {
+    background-color: var(--sec) !important;
+    color: var(--dark) !important;
+
+}
+.dark p{
+    color: var(--dark) !important;
+
+}
+
+img:hover {
+    transform: none !important;
+    scale: 1 !important;
+    transition: none !important;
+
+}

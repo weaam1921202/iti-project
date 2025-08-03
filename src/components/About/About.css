@@ -1,0 +1,26 @@
+.About h3 {
+    color: black !important;
+}
+.About p{
+    color: black;
+}
+.About  span{
+    color: var(--main) !important;
+}
+
+.About a{
+    border: 1px solid var(--main);
+    border-radius: 2px;
+    padding: 10px 5px;
+    color: var(--main);
+    transition: 0.5s;
+}
+.About a:hover{
+    background-color: var(--main);
+    color: blue;
+    border: var(--main);
+}
+
+/* img{
+    transform: scale(0.5);
+} */

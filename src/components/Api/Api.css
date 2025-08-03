@@ -1,0 +1,59 @@
+.Api {
+    /* background-color:var(--sec) !important;
+    color: #fff !important ; */
+
+
+}
+.dark .row .card{
+    
+    background-color:var(--sec) !important ;
+    color: var(--dark) !important;
+    
+    
+}
+img{
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+ /* .card p{
+     color: var(--dark) !important;
+
+} */
+.Api strong{
+   color: var(--main); 
+}
+
+.Api .procss i{
+    padding: 10px 8px;
+    color: #fff;
+    background-color: var(--main);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Api .row .card {
+    width: 300px;
+    padding: 5px;
+}
+
+.Api .row .card .img{
+    width: 100%;
+}
+
+.Api .row .card .img img{
+    width: 100%;
+}
+button.active{
+    background-color: var(--sec) !important;
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+button.active:hover{
+    background-color: var(--main) !important;
+    color: #fff !important;
+}
