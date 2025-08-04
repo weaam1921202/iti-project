@@ -1,0 +1,42 @@
+.checkout {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+input.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+span {
+  font-weight: bold;
+  color: #000!important;
+}
+
+.dark span {
+  color: #fff!important;
+}
+
+.dark input{
+    background: #000!important;
+    color: #fff!important;
+}
+
+.dark .row .summary {
+    background: #000!important;
+    color: #fff!important;
+}
+
+.dark .row .summary li {
+    background: #000!important;
+    color: #fff!important;
+}
+
+.dark h2{
+    color:#000!important;
+}

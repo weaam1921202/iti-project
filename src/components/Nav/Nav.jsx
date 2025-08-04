@@ -15,7 +15,6 @@ import { favcontext } from '../../context/Favcontext';
   const {  cart } = useContext( cartcontext )
   const {  list } = useContext( favcontext )
 
-  console.log( cart );
   
 
 

@@ -12,7 +12,7 @@ import Detailsdummy from './components/Detailsdummy'
 import { apicontext } from './context/Apicontext'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Lottiehandler from './Lottiehandler'
-
+import Checkout from './components/Checkout/Checkout'
 const Layout = lazy(() => import('./Layout'))
 
 export default function App() {
@@ -37,6 +37,7 @@ export default function App() {
         { path: 'pro/:key', element: <Detailsdummy /> },
         { path: 'cart', element: <Cart /> },
         { path: 'favlist', element: <Favlist /> },
+        { path: "/checkout", element: <Checkout /> }, // Samy Added This Component
       ],
       errorElement: <Lottiehandler type="error" />,
     },

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import './Cart.css'
 import axios from 'axios'
 import { cartcontext } from '../../context/Cartcontext'
+import { Link } from 'react-router-dom'
 
     export default function Cart() {
         const { cart , addcart , deletepro , plus , minus } = useContext(cartcontext)
@@ -71,6 +72,21 @@ import { cartcontext } from '../../context/Cartcontext'
                         <b className='fs-4 text-dark'> Total</b>
                         <b className=' fs-4 text-dark'> $ {total.toFixed(2)}</b>
                     </div>
+
+                                  {/* Buy Now Button */}
+              <div className="text-center mt-4">
+                <Link
+                  to="/checkout"
+                  className="btn px-4 py-2"
+                  style={{
+                    backgroundColor: "#cece2b",
+                    color: "#000",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Buy Now
+                </Link>
+              </div>
                 </div>
 
             </div>
