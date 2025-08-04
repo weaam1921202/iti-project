@@ -21,3 +21,11 @@
 .dark .Category .row {
     background: #333;
 }
+
+.details {
+  transition: transform 0.3s ease;
+}
+
+.details:hover {
+  transform: translateY(-5px);
+}

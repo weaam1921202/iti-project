@@ -1,52 +1,51 @@
-nav{
-   background-color: #3d464d;
-   color: #fff;
+nav {
+  background-color: #3d464d;
+  color: #fff;
 }
 
-nav .nav-link{
-    color: #fff !important ;
-    font-size: 18px;
- }
- .fa-sun{
-   color: gold;
-   font-size: 20px;
- }
- nav .navbar-brand{
-    color: #fff;
-    font-weight: 600 !important ;;
- }
-a:hover{
-    text-decoration: none !important;
-    color: var(--main) !important;
- }
-.toggler:hover{
-    background-color: var(--main) !important;
-    color: #fff !important;
- }
+nav .nav-link {
+  color: #fff !important ;
+  font-size: 18px;
+}
+.fa-sun {
+  color: gold;
+  font-size: 20px;
+}
+nav .navbar-brand {
+  color: #fff;
+  font-weight: 600 !important ;
+}
+a:hover {
+  text-decoration: none !important;
+  color: var(--main);
+}
+.toggler:hover {
+  background-color: var(--main) !important;
+  color: #fff !important;
+}
 
- nav .navbar-brand span{
-    color: var(--main)!important;
- }
+nav .navbar-brand span {
+  color: var(--main) !important;
+}
 
- nav .dropdown-menu{
-    background-color: var(--main) !important;
-    padding: 5px !important;
- }
- 
- nav .icon{
-    font-size: 23px;
-    color: var(--main);
+nav .dropdown-menu {
+  background-color: var(--main) !important;
+  padding: 5px !important;
+}
 
- }
- 
- nav sub{
-   color: white;
- }
- 
+nav .icon {
+  font-size: 23px;
+  color: var(--main);
+}
+
+nav sub {
+  color: white;
+}
+
 nav .nav-link:hover,
 nav .nav-link.active {
-    background-color: var(--main) !important;
-    color: #fff !important;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  background-color: var(--main) !important;
+  color: #fff !important;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
