@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom'
 import { apicontext } from '../../context/Apicontext'
 import { cartcontext } from '../../context/Cartcontext'
 import { favcontext } from '../../context/Favcontext'
+import { UserContext } from './../../context/UserContext';
 
 export default function Dummy({ load }) {
     const { dummypro } = useContext(apicontext)
     const { addcart } = useContext(cartcontext)
     const { fav } = useContext(favcontext)
+    const { user } = useContext(UserContext)
 
     const [allProducts, setAllProducts] = useState([])
     const [products, setProducts] = useState([])
@@ -29,6 +31,26 @@ export default function Dummy({ load }) {
     const showAll = () => {
         setProducts(allProducts)
         setShowAllBtn(false)
+    }
+
+       const handleAddToCart = (val) => {
+        const token = localStorage.getItem('userToken');
+        if (user) {
+            addcart(val);
+        } else {
+            alert('You must log in to add products to your cart');
+            window.location.href = '/login';
+        }
+    }
+
+    const handleAddToFav = (val) => {
+        const token = localStorage.getItem('userToken');
+        if (user) {
+            fav(val);
+        } else {
+            alert('You must log in to add products to your favorites');
+            window.location.href = '/login';
+        }
     }
 
     return (
@@ -67,8 +89,8 @@ export default function Dummy({ load }) {
                                 <p className='fs-5 fw-bold text-center my-2'>{val.title.split(' ').slice(0, 3).join(' ')}</p>
                                 <p className='fs-5 fw-bold text-center my-2'>{val.price}</p>
                                 <div className='procss d-flex align-items-center justify-content-between'>
-                                    <i onClick={() => fav(val)} className='fa-solid fa-heart'></i>
-                                    <i onClick={() => addcart(val)} className='fa-solid fa-cart-shopping'></i>
+                                     <i onClick={() => handleAddToFav(val)} className='fa-solid fa-heart'></i>
+                                    <i onClick={() => handleAddToCart(val)} className='fa-solid fa-cart-shopping'></i>
                                 </div>
                             </div>
                         </div>

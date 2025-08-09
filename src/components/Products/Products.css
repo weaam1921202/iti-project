@@ -66,4 +66,8 @@ img:hover{
     border-radius: 3px;
     cursor: pointer;
  }
- 
+ .disabled-icon {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}

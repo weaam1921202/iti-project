@@ -5,14 +5,35 @@ import './Products.css'
 import apiProducts from './apiProducts'
 import { cartcontext } from '../../context/Cartcontext'
 import { favcontext } from '../../context/Favcontext'
+import { UserContext } from '../../context/UserContext'
 import Heading from '../../Heading'
 
      export default function Products({  load }) {
 
         const {addcart} =useContext (cartcontext)
         const {fav} =useContext (favcontext)
+        const { user } = useContext(UserContext)
 
 
+    const handleAddToCart = (val) => {
+        const token = localStorage.getItem('userToken');
+        if (user) {
+            addcart(val);
+        } else {
+            alert('You must log in to add products to your cart');
+            window.location.href = '/login';
+        }
+    }
+
+    const handleAddToFav = (val) => {
+        const token = localStorage.getItem('userToken');
+        if (user) {
+            fav(val);
+        } else {
+            alert('You must log in to add products to your favorites');
+            window.location.href = '/login';
+        }
+    }
 
 
     return(
@@ -60,10 +81,10 @@ import Heading from '../../Heading'
         
                                 </div>
                                 <div className='procss d-flex align-items-center justify-content-between'>
-        
-                                    <i onClick={()=>fav(val)} className='fa-solid fa-heart'></i>
-                                    <i onClick={()=> addcart( val)} className='fa-solid fa-cart-shopping'></i>
-        
+
+                                   <i onClick={() => handleAddToFav(val)} className='fa-solid fa-heart'></i>
+                                    <i onClick={() => handleAddToCart(val)} className='fa-solid fa-cart-shopping'></i>
+
                                 </div>
         
                             </div>

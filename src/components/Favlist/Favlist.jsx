@@ -1,26 +1,26 @@
-// import React, { useContext } from 'react'
 import React, { useContext } from 'react'
-
 import '../Favlist/Favlist.css'
-import img3 from '../../assets/proimg/product-8.jpg'
-import { FaSquareXmark } from "react-icons/fa6";
 import { cartcontext } from '../../context/Cartcontext';
 import { favcontext } from '../../context/Favcontext';
 
+export default function Favlist() {
 
+    const { addcart } = useContext(cartcontext)
+    const { list, deletelist } = useContext(favcontext)
 
-    export default function Favlist() {
+    const handleAddToCart = (val) => {
+        const token = localStorage.getItem('userToken');
+        if (token) {
+            addcart(val);
+        } else {
+            alert('You must log in to add products to your cart');
+            window.location.href = '/login';
+        }
+    }
 
-        const {addcart} =useContext (cartcontext)
-       const {list , deletelist } = useContext(favcontext)
+    let total = 0
 
-
-
-    // export default function Favlist({list , deletelist , addcart }) {
-
-    let total=0
-    
-        return (
+    return (
         <div className='list container my-5'>
             <div className="row gy-3 d-flex justify-content-center">
                 {list.length > 0 ?
@@ -36,7 +36,7 @@ import { favcontext } from '../../context/Favcontext';
                                             <p className='text-dark'>price : $ {value.price}</p>
                                             <p className='text-success fw-bold'>total price : $ {(value.price * (value.amount || 1)).toFixed(2)}</p>
                                         </div>
-                                        <button className='btn btn-primary' onClick={() => addcart(value)}>
+                                        <button className='btn btn-primary' onClick={() => handleAddToCart(value)}>
                                             <i className='fa-solid fa-cart-shopping'></i> Add to Cart
                                         </button>
                                         <button className='btn btn-danger' onClick={() => deletelist(value, index)}>

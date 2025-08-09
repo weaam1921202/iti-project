@@ -4,8 +4,9 @@
 }
 
 .Category .row .card  {
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: #fff;
+    color: var(--dark)
+    ;
 }
 .Category .row .card p{
     color: #000 !important;
@@ -20,4 +21,12 @@
 
 .dark .Category .row {
     background: #333;
+}
+
+.details {
+  transition: transform 0.3s ease;
+}
+
+.details:hover {
+  transform: translateY(-5px);
 }

@@ -1,0 +1,166 @@
+.form{
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: #cece2b;
+  outline: none;
+  color: #cece2b;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.2);
+}
+
+.form label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: -15px;
+}
+
+.form button {
+  padding: 12px;
+  background-color: #cece2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #a2a22e;
+}
+
+.form p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.form a {
+  color: #cece2b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form a:hover {
+  color: #a2a22e !important;
+}
+
+@media (max-width: 480px) {
+ .form {
+    padding: 30px 20px;
+  }
+}
+
+
+
+
+.profile-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.avatar-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #a2a22e;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: #444;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #a2a22e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #84842a;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .avatar-img {
+    width: 100px;
+    height: 100px;
+  }
+}

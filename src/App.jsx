@@ -13,6 +13,17 @@ import { apicontext } from './context/Apicontext'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Lottiehandler from './Lottiehandler'
 import Checkout from './components/Checkout/Checkout'
+import Login from "./components/login/Login";
+import Register from "./components/login/Register";
+import { UserContext } from './context/UserContext';
+import './App.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap-icons/font/bootstrap-icons.css';
+// import 'react-toastify/dist/ReactToastify.css';
+// import 'react-loading-skeleton/dist/skeleton.css';
+import Editpass from "./components/login/Editpass";
+import Profile from "./components/login/Profile";
 const Layout = lazy(() => import('./Layout'))
 
 export default function App() {
@@ -38,6 +49,10 @@ export default function App() {
         { path: 'cart', element: <Cart /> },
         { path: 'favlist', element: <Favlist /> },
         { path: "/checkout", element: <Checkout /> }, // Samy Added This Component
+        { path: "Login", element: <Login /> },
+        { path: "Register", element: <Register /> },
+        { path: "Editpass", element: <Editpass /> },
+        { path: "profile", element: <Profile /> },
       ],
       errorElement: <Lottiehandler type="error" />,
     },

@@ -22,7 +22,9 @@
   --sec:#000 !important;
   --text:#fff ; 
 } 
-
+button{
+  width: auto !important;
+}
 .dark del{
   background-color: var(--sec) !important;
   color: var(--dark) !important;
