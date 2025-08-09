@@ -1,3 +1,4 @@
+//Last Update
 import React, { useContext, lazy, Suspense } from 'react'
 import About from './components/About/About'
 import Home from './components/Home/Home'
@@ -44,7 +45,7 @@ export default function App() {
         { path: 'pro/:key', element: <Detailsdummy /> },
         { path: 'cart', element: <Cart /> },
         { path: 'favlist', element: <Favlist /> },
-        { path: "/checkout", element: <Checkout /> }, // Samy Added This Component
+        { path: "/checkout", element: <Checkout /> }, 
         { path: "Login", element: <Login /> },
         { path: "Register", element: <Register /> },
         { path: "Editpass", element: <Editpass /> },
