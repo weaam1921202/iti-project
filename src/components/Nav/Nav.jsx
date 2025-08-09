@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// import React, { useContext } from 'react'
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
 import React, { useContext } from "react";
 import "./Nav.css";
 import { FaHeart } from "react-icons/fa";
@@ -6,26 +10,40 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { apicontext } from "../../context/Apicontext";
 import { cartcontext } from "../../context/Cartcontext";
 import { favcontext } from "../../context/Favcontext";
+<<<<<<< HEAD
 import Login from "./../login/Login";
 import { UserContext } from "../../context/UserContext";
+=======
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
 
 export default function Nav() {
   const { darkmood, dark } = useContext(apicontext);
   const { cart } = useContext(cartcontext);
   const { list } = useContext(favcontext);
+<<<<<<< HEAD
   const { user, handelLogout } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
     handelLogout(navigate);
   };
+=======
+
+  // export default function Nav({cart , list , darkmood , dark}) {
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
 
   return (
     <nav className="navbar navbar-expand-lg px-4 sticky-top">
       <div className="container-fluid">
+<<<<<<< HEAD
         <a className="navbar-brand fs-4" href="#">
           Media <span>Shop</span>
         </a>
+=======
+        <Link to={"/"} className="navbar-brand fs-4" href="#">
+          Media <span>Shop</span>
+        </Link>
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
         <button
           className="navbar-toggler toggler btn btn-light bg-light"
           type="button"
@@ -44,8 +62,11 @@ export default function Nav() {
                 Home
               </NavLink>
             </li>
+<<<<<<< HEAD
 
            
+=======
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
             <li className="nav-item">
               <NavLink to={"/about"} className="nav-link">
                 About
@@ -58,7 +79,11 @@ export default function Nav() {
             </li>
             <li className="nav-item dropdown">
               <NavLink
+<<<<<<< HEAD
                 to={"product"}
+=======
+                to={"contact"}
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
                 className="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -104,6 +129,7 @@ export default function Nav() {
               <i className="icon fa-solid fa-cart-shopping" />
               <sub>({cart.length})</sub>
             </Link>
+<<<<<<< HEAD
 
             {user ? (
               <div className="fs-5 icon-login" style={{ cursor: "pointer" }}>
@@ -140,9 +166,15 @@ export default function Nav() {
                 </span>
               </Link>
             )}
+=======
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
           </div>
         </div>
       </div>
     </nav>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17

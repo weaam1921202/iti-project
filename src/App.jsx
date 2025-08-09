@@ -17,21 +17,17 @@ import Login from "./components/login/Login";
 import Register from "./components/login/Register";
 import { UserContext } from './context/UserContext';
 import './App.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
-// import 'bootstrap-icons/font/bootstrap-icons.css';
-// import 'react-toastify/dist/ReactToastify.css';
-// import 'react-loading-skeleton/dist/skeleton.css';
+
 import Editpass from "./components/login/Editpass";
 import Profile from "./components/login/Profile";
 const Layout = lazy(() => import('./Layout'))
 
 export default function App() {
-  const { dark } = useContext(apicontext)
+  const { dark } = useContext(apicontext);
 
   const router = createBrowserRouter([
     {
-      path: '',
+      path: "",
       element: (
         <Suspense fallback={<Lottiehandler type="load" />}>
           <Layout />
@@ -56,11 +52,11 @@ export default function App() {
       ],
       errorElement: <Lottiehandler type="error" />,
     },
-  ])
+  ]);
 
   return (
-    <main className={dark ? 'dark' : ''}>
+    <main className={dark ? "dark" : ""}>
       <RouterProvider router={router} />
     </main>
-  )
+  );
 }

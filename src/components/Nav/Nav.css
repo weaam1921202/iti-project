@@ -17,7 +17,11 @@ nav .navbar-brand {
 }
 a:hover {
   text-decoration: none !important;
+<<<<<<< HEAD
   color: var(--main) !important;
+=======
+  color: var(--main);
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
 }
 .toggler:hover {
   background-color: var(--main) !important;
@@ -25,7 +29,11 @@ a:hover {
 }
 
 nav .navbar-brand span {
+<<<<<<< HEAD
   color: var(--main);
+=======
+  color: var(--main) !important;
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
 }
 
 nav .dropdown-menu {
@@ -49,6 +57,7 @@ nav .nav-link.active {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+<<<<<<< HEAD
 .icon-login {
   text-decoration: none;
   list-style: none;
@@ -69,3 +78,5 @@ nav .nav-link.active {
 .span-user {
   color: #cece2b !important ;
 }
+=======
+>>>>>>> 7d34715afa1c6e9377ae210d96ad22affb3fba17
